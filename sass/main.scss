@@ -1,0 +1,393 @@
+// In `sass/main.scss`
+// sass-lint:disable quotes
+@import 'mixin';
+@import 'sanitize';
+
+// fonts
+@font-face {
+  font-family: 'Interstate-BlackCond';
+  src: url("../fonts/Interstate-BlackCond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Interstate-Bold';
+  src: url("../fonts/Interstate-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Interstate-BoldCond';
+  src: url("../fonts/Interstate-BoldCond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { font-family: 'Interstate-Regular';
+  src: url("../fonts/Interstate-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// variables
+$font-blackcond: 'Interstate-BlackCond', sans-serif;
+$font-bold: "Interstate-Bold", sans-serif;
+$font-boldcond: "Interstate-BoldCond", sans-serif;
+$font-reg: "Interstate-Regular", sans-serif;
+
+$font-title: "Interstate-BlackCond", sans-serif;
+$font-copy: 'Open Sans', sans-serif;
+
+$black: #231f20;
+$white: #fff;
+
+html,
+body {
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+//==========================================================================
+//  Author's custom styles
+//==========================================================================
+
+.lp-container {
+  @include font-size(12px);
+  padding: 1000;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  line-height: 1.5;
+  font-family: $font-copy;
+  font-weight: 400;
+  color: $black;
+  text-align: center;
+}
+
+.header-title {
+  background-color: $white;
+  width: 90%;
+  margin: 50px auto 0;
+  padding-top: 20px;
+  .header-title-lg {
+    @include font-size(60px);
+    font-family: $font-blackcond;
+    margin: 10px 10px 0;
+
+  }
+  .header-title-sm {
+    @include font-size(30px);
+    font-family: $font-boldcond;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+
+  .header-tagline {
+    margin: 10px auto;
+  }
+}
+
+.title,
+.subtitle,
+.small-title {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin: 0;
+  font-weight: normal;
+	}
+	h3.stitle {
+		font-family: $font-copy;
+		// letter-spacing: 0;
+		@include font-size(12.5px);
+		line-height: 130%;
+		margin-bottom: 15px;
+		font-weight: 400;
+		strong {
+			@include font-size(13.3px);
+		}
+		&.lowercase {
+			text-transform: none;
+		}
+	}
+	.ffblackc {
+		font-family: $font-blackcond !important;
+	}
+	.ffbold {
+		font-family: $font-bold !important;
+	}
+	.ffboldc {
+		font-family: $font-boldcond !important;
+	}
+	.ffreg {
+		font-family: $font-reg !important;
+	}
+	a {
+		text-decoration: none;
+	}
+	p {
+		margin: 0;
+	}
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+	sup {
+		position: relative;
+		top: -0.25em;
+		font-size: 70%;
+	}
+
+	article {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	section {
+		margin-left: auto;
+		margin-right: auto;
+		clear: both;
+		max-width: 945px;
+    width: 80%;
+		overflow: hidden;
+		// padding-top: 10px;
+		margin-bottom: 20px;
+		&.no-border {
+			border-bottom: 0;
+		}
+		p {
+			margin-bottom: 20px;
+			a {
+				text-decoration: underline;
+				font-weight: 600;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.title {
+			// letter-spacing: 2.5px;
+			@include font-size(22px);
+			margin-bottom: 20px;
+			span {
+				display: block;
+			}
+			&.no-margin {
+				margin: 0;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.container_cta {
+		clear: both;
+	}
+	.cta {
+		color: $black;
+		text-transform: uppercase;
+		font-family: $font-title;
+		line-height: 38px;
+		height: 38px;
+		clear: both;
+		letter-spacing: 1px;
+		padding-right: 45px;
+		padding-left: 45px;
+		margin-bottom: 40px;
+		font-weight: normal;
+		display: inline-block;
+		border: 2px solid #000;
+		transition: all 250ms ease-in-out;
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+	.link {
+		font-weight: 800;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.center {
+		display: table;
+		width: 100%;
+		.alignMiddle {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.underline {
+		text-decoration: underline;
+	}
+	.clear {
+		clear: both;
+	}
+	.lrg {
+		font-size: 112%;
+	}
+	.col {
+		float: left;
+		width: 50%;
+		img {
+			display: block;
+		}
+		p:last-child {
+			margin-bottom: 5px;
+		}
+	}
+	.videoWrapper {
+		position: relative;
+		// padding-bottom: 56.25%; /* 16:9 */
+		// padding-top: 25px;
+		height: 268px;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.video {
+		position: relative;
+		.videoWrapper {
+			display: none;
+			background-color: #fff;
+		}
+		img {
+			display: block;
+		}
+		.videoCTA {
+			cursor: pointer;
+			&:hover {
+				.play {
+					opacity: 1;
+				}
+			}
+		}
+		.play {
+			opacity: 0.6;
+			transition: 300ms ease-in-out;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -43px;
+			margin-top: -49px;
+		}
+	}
+	.mb-fix {
+		margin-bottom: 20px;
+	}
+	.alignMiddle {
+		height: 268px;
+		p {
+			padding: 0 20px;
+			font-size: 90%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.maxwidth {
+		max-width: 780px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bold {
+		font-size: 115%;
+		font-weight: 600;
+	}
+	.full-width {
+		display: block;
+		margin-bottom: 36px;
+	}
+
+
+	header {
+		margin-left: auto;
+		margin-right: auto;
+		background: url("../images/ENE_REPORT_HERO.jpg") center top no-repeat;
+		position: relative;
+		margin-bottom: 30px;
+
+		width: 90%;
+		article {
+			padding-top: 285px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.h1 {
+			margin-bottom: 10px;
+			@extend .ffblackc;
+			@include font-size(70px);
+			font-weight: bold;
+			line-height: 90%;
+
+			span {
+				display: block;
+			}
+		}
+		h2.title {
+			@include font-size(26px);
+			@extend .ffboldc;
+			margin-bottom: 0;
+		}
+		p {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	ul.list {
+		overflow: hidden;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		li {
+			vertical-align: top;
+			display: inline-block;
+			width: 33%;
+			> div {
+				margin: 0 9px;
+			}
+		}
+		&.x7 {
+			width: 950px;
+			li {
+				width: 14.27%;
+				float: left;
+			}
+			p {
+				padding: 0;
+			}
+		}
+		figure {
+			margin-bottom: 17px;
+		}
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.title {
+			margin-bottom: 15px;
+			padding: 0 15px;
+			@include font-size(20px);
+		}
+		.tagline {
+			@include font-size(13.3px);
+			padding: 0 10px;
+			padding-top: 10px;
+			padding-bottom: 0;
+		}
+		p {
+			margin-bottom: 15px;
+			padding: 0 20px;
+		}
+	}
