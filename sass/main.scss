@@ -71,12 +71,12 @@ header {
   position: relative;
   background: url("../images/ENE_REPORT_HERO.jpg") no-repeat;
   background-size: contain;
+  article {
+    padding-top: 30%;
+    //min-height:400px;
+  }
 }
-article {
-  padding-top: 30%;
-  //min-height: 400px;
 
-}
 .header-title {
 
   top: 280px;
@@ -112,6 +112,15 @@ article {
 
   .header-tagline {
     margin: 20px;
+    a {
+      color: $black;
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $black;
+      }
+    }
   }
 }
 
@@ -124,7 +133,7 @@ article {
   position: relative;
 }
 .row {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
   height: 100%;
   position: relative;
@@ -191,6 +200,9 @@ article {
       overflow-y: hidden;
     }
   }
+}
+.lp-story {
+  padding: 10%;
 }
 
 //===============
