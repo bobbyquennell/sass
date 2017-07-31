@@ -75,7 +75,7 @@
 
 html, body { height: 80%; margin: 0; padding: 0; }
 
-.lp-container { font-size: 12px; font-size: 0.75rem; width: 100%; margin: 20px auto; line-height: 1.5; font-family: "Open Sans", sans-serif; font-weight: 400; color: #231f20; text-align: center; }
+.lp-container { font-size: 12px; font-size: 0.75rem; width: 90%; margin: 20px auto; line-height: 1.5; font-family: "Open Sans", sans-serif; font-weight: 400; color: #231f20; text-align: center; }
 
 .lp-container h1, .lp-container h2, .lp-container h4 { color: #231f20; }
 
@@ -127,11 +127,11 @@ html, body { height: 80%; margin: 0; padding: 0; }
 
 .col .col-content .play { position: absolute; top: 39%; left: 44%; width: 11% !important; height: 23% !important; opacity: .6; transition: 300ms ease-in-out; }
 
-.lp-story { padding: 10%; line-height: 1.5; }
+.lp-story { padding: 5% 10%; line-height: 1.5; }
 
 @media only screen and (max-width: 50em) { .lp-story { padding: 5%; } }
 
-.lp-story h4 { color: #231f20; font-family: "Interstate-BoldCond", sans-serif; font-size: 20px; font-size: 1.25rem; margin: 3% auto; text-transform: none; }
+.lp-story h4 { color: #231f20; font-family: "Interstate-BoldCond", sans-serif; font-size: 15px; font-size: 0.9375rem; margin: 3% auto; text-transform: none; }
 
 .lp-story p { margin: 3% auto; padding-top: 2%; }
 
