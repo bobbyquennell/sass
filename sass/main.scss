@@ -53,7 +53,7 @@ body {
 
 .lp-container {
   @include font-size(12px);
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 
   line-height: 1.5;
@@ -61,21 +61,27 @@ body {
   font-weight: 400;
   color: $black;
   text-align: center;
+  h1,
+  h2,
+  h4 {
+    color: $black;
+  }
+  header {
+    position: relative;
+    background: url("../images/ENE_REPORT_HERO.jpg") no-repeat;
+    background-size: contain;
+    article {
+      padding-top: 30%;
+      //min-height:400px;
+    }
+  }
 
 }
 
 //=================
 // header
 //=================
-header {
-  position: relative;
-  background: url("../images/ENE_REPORT_HERO.jpg") no-repeat;
-  background-size: contain;
-  article {
-    padding-top: 30%;
-    //min-height:400px;
-  }
-}
+
 
 .header-title {
 
@@ -94,7 +100,7 @@ header {
       @include font-size(30px);
     };
     font-family: $font-blackcond;
-    margin: 10px 10px 0;
+    margin: 10px 10px;
 
   }
   .header-title-sm {
@@ -107,11 +113,13 @@ header {
     };
     font-family: $font-boldcond;
     text-transform: uppercase;
-    margin: 0 10px;
+    margin: 10px 10px;
   }
 
   .header-tagline {
-    margin: 20px;
+    margin: 20px auto;
+    line-height: 1.5;
+    max-width: 100%;
     a {
       color: $black;
       &:link,
@@ -119,6 +127,7 @@ header {
       &:hover,
       &:active {
         color: $black;
+        text-decoration: underline;
       }
     }
   }
@@ -193,6 +202,18 @@ header {
   @include bp-large {
     padding: 5%;
   };
+  line-height: 1.5;
+  h4 {
+    color: $black;
+    font-family: $font-boldcond;
+    @include font-size(20px);
+    margin: 3% auto;
+    text-transform:none;
+  }
+  p {
+      margin: 3% auto;
+      padding-top: 2%;
+  }
 }
 
 //===============

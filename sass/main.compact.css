@@ -1,0 +1,144 @@
+.lp { /* Universal inheritance */ /* Opinionated defaults */ }
+
+.lp img { border: 0; }
+
+.lp :root { -ms-overflow-style: -ms-autohiding-scrollbar; overflow-y: scroll; text-size-adjust: 100%; }
+
+.lp audio:not([controls]) { display: none; }
+
+.lp details { display: block; }
+
+.lp input[type="number"] { width: auto; }
+
+.lp input[type="search"] { -webkit-appearance: textfield; }
+
+.lp input[type="search"]::-webkit-search-cancel-button, .lp input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+.lp main { display: block; }
+
+.lp summary { display: block; }
+
+.lp pre { overflow: auto; }
+
+.lp progress { display: inline-block; }
+
+.lp small { font-size: 75%; }
+
+.lp template { display: none; }
+
+.lp textarea { overflow: auto; }
+
+.lp [hidden] { display: none; }
+
+.lp [unselectable] { user-select: none; }
+
+.lp *, .lp *::before, .lp *::after { box-sizing: inherit; text-decoration: inherit; }
+
+.lp * { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; line-height: inherit; }
+
+.lp *, .lp *::before, .lp *::after { border-style: solid; border-width: 0; }
+
+.lp * { margin: 0; padding: 0; }
+
+.lp :root { box-sizing: border-box; cursor: default; font-family: sans-serif; line-height: 1.5em; text-rendering: optimizeLegibility; vertical-align: top; }
+
+.lp button, .lp input, .lp select, .lp textarea { background: transparent; }
+
+.lp code, .lp kbd, .lp pre, .lp samp { font-family: monospace, monospace; }
+
+.lp input { min-height: 1.5em; }
+
+.lp nav ol, .lp nav ul { list-style: none; }
+
+.lp select { -moz-appearance: none; -webkit-appearance: none; }
+
+.lp select::-ms-expand { display: none; }
+
+.lp select::-ms-value { color: currentColor; }
+
+.lp table { border-collapse: collapse; border-spacing: 0; }
+
+.lp textarea { resize: vertical; }
+
+.lp ::selection { background-color: #1f365b; color: #fff; text-shadow: none; }
+
+@media screen { .lp [hidden~="screen"] { display: inherit; }
+  .lp [hidden~="screen"]:not(:active):not(:focus):not(:target) { clip: rect(0 0 0 0) !important; position: absolute !important; } }
+
+@font-face { font-family: 'Interstate-BlackCond'; src: url("../fonts/Interstate-BlackCond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Interstate-Bold'; src: url("../fonts/Interstate-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Interstate-BoldCond'; src: url("../fonts/Interstate-BoldCond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Interstate-Regular'; src: url("../fonts/Interstate-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+html, body { height: 80%; margin: 0; padding: 0; }
+
+.lp-container { font-size: 12px; font-size: 0.75rem; width: 100%; margin: 20px auto; line-height: 1.5; font-family: "Open Sans", sans-serif; font-weight: 400; color: #231f20; text-align: center; }
+
+.lp-container h1, .lp-container h2, .lp-container h4 { color: #231f20; }
+
+.lp-container header { position: relative; background: url("../images/ENE_REPORT_HERO.jpg") no-repeat; background-size: contain; }
+
+.lp-container header article { padding-top: 30%; }
+
+.header-title { top: 280px; background-color: #fff; width: 90%; margin-left: auto; margin-right: auto; padding-top: 20px; }
+
+.header-title .header-title-lg { font-size: 60px; font-size: 3.75rem; font-family: "Interstate-BlackCond", sans-serif; margin: 10px 10px; }
+
+@media only screen and (max-width: 46.8em) { .header-title .header-title-lg { font-size: 40px; font-size: 2.5rem; } }
+
+@media only screen and (max-width: 30em) { .header-title .header-title-lg { font-size: 30px; font-size: 1.875rem; } }
+
+.header-title .header-title-sm { font-size: 30px; font-size: 1.875rem; font-family: "Interstate-BoldCond", sans-serif; text-transform: uppercase; margin: 10px 10px; }
+
+@media only screen and (max-width: 46.8em) { .header-title .header-title-sm { font-size: 25px; font-size: 1.5625rem; } }
+
+@media only screen and (max-width: 30em) { .header-title .header-title-sm { font-size: 20px; font-size: 1.25rem; } }
+
+.header-title .header-tagline { margin: 20px auto; line-height: 1.5; max-width: 100%; }
+
+.header-title .header-tagline a { color: #231f20; }
+
+.header-title .header-tagline a:link, .header-title .header-tagline a:visited, .header-title .header-tagline a:hover, .header-title .header-tagline a:active { color: #231f20; text-decoration: underline; }
+
+.grid-container { margin-left: auto; margin-right: auto; position: relative; }
+
+.row { max-width: 100%; margin: auto; height: 100%; position: relative; }
+
+.col { width: 50%; float: left; min-height: 1px; position: relative; }
+
+@media only screen and (max-width: 46.8em) { .col { width: 100%; float: none; } }
+
+.col:first-child { clear: both; }
+
+.col.col-right { float: right; }
+
+@media only screen and (max-width: 46.8em) { .col.col-right { float: none; } }
+
+.col .col-content { position: relative; }
+
+.col .col-content img { width: 100%; }
+
+@media only screen and (max-width: 50em) { .col .col-content img { height: 100%; } }
+
+@media only screen and (max-width: 46.8em) { .col .col-content img { height: 100%; } }
+
+.col .col-content .play { position: absolute; top: 39%; left: 44%; width: 11% !important; height: 23% !important; opacity: .6; transition: 300ms ease-in-out; }
+
+.lp-story { padding: 10%; line-height: 1.5; }
+
+@media only screen and (max-width: 50em) { .lp-story { padding: 5%; } }
+
+.lp-story h4 { color: #231f20; font-family: "Interstate-BoldCond", sans-serif; font-size: 20px; font-size: 1.25rem; margin: 3% auto; text-transform: none; }
+
+.lp-story p { margin: 3% auto; padding-top: 2%; }
+
+.cta:hover { cursor: pointer; }
+
+.cta:hover .play { opacity: 1; }
+
+.video-wrapper { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; }
+
+.video-wrapper iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; }
