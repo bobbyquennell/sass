@@ -139,7 +139,7 @@ header {
   position: relative;
 }
 .col {
-  @include bp-large {
+  @include bp-medium {
     width: 100%;
     float: none;
   };
@@ -152,7 +152,7 @@ header {
   }
   &.col-right {
     float: right;
-    @include bp-large {
+    @include bp-medium {
       float: none;
     };
   }
@@ -162,15 +162,15 @@ header {
       width: 100%;
       @include bp-large {
         height: 100%;
-        width: 80%;
+        // width: 80%;
       };
       @include bp-medium {
         height: 100%;
-        width: 80%;
+        // width: 80%;
       };
-      @include bp-small {
-        height: 180px;
-      };
+      // @include bp-small {
+      //   height: 180px;
+      // };
       // &:hover {
       //   cursor: pointer;
       // }
@@ -185,24 +185,14 @@ header {
       opacity: .6;
       transition: 300ms ease-in-out;
     }
-    p {
-      max-height: 180px;
-      margin: 20px;
-      @include bp-large {
-        margin: 20px 30px;
-      };
-      @include bp-medium {
-        margin: 20px 30px;
-      };
-      @include bp-small {
-        margin: 20px 30px;
-      };
-      overflow-y: hidden;
-    }
+
   }
 }
 .lp-story {
   padding: 10%;
+  @include bp-large {
+    padding: 5%;
+  };
 }
 
 //===============
@@ -212,5 +202,18 @@ header {
   cursor: pointer;
   .play {
     opacity: 1;
+  }
+}
+.video-wrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }

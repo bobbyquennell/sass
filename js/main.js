@@ -5,8 +5,8 @@
 var Site;
 
 (function ($) {
-	'use strict'; 
-	
+	'use strict';
+
 	Site = {
 		/**
 		 * Tabs for each product on tactile device
@@ -14,7 +14,7 @@ var Site;
 		 */
 		init: function (elt) {
 
-			this.videoEmbedOnClick();			
+			this.videoEmbedOnClick();
 		},
 		/**
 		 * Switch video poster to embed youtube autoplay on click
@@ -31,7 +31,7 @@ var Site;
 				var urlToPlay = $videoContainer.data('src');
 
 				$videoContainer.find('.videoCTA').hide();
-				$videoContainer.find('.videoWrapper').html('<iframe width="560" height="315" src="'+urlToPlay+'" frameborder="0" allowfullscreen></iframe>').show();
+				$videoContainer.find('.video-wrapper').html('<iframe width="560" height="315" src="'+urlToPlay+'" frameborder="0" allowfullscreen></iframe>').show();
 				videoIsPlaying = true;
 			});
 
@@ -40,7 +40,7 @@ var Site;
 				e.stopPropagation();
 
 				if(videoIsPlaying) {
-					$('.videoWrapper').html('');
+					$('.video-wrapper').html('');
 					$('.video-player').hide();
 					$('.videoCTA').show();
 					videoIsPlaying = false;
