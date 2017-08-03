@@ -31,7 +31,7 @@ var Site;
 				var urlToPlay = $videoContainer.data('src');
 
 				$videoContainer.find('.videoCTA').hide();
-				$videoContainer.find('.video-wrapper').html('<iframe width="560" height="315" src="'+urlToPlay+'" frameborder="0" allowfullscreen></iframe>').show();
+				$videoContainer.find('.video-wrapper').html('<iframe width="560" height="315" src="'+urlToPlay+'?autoplay=1&control=0showinfo=0" frameborder="0" allowfullscreen></iframe>').show();
 				videoIsPlaying = true;
 			});
 

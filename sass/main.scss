@@ -213,7 +213,27 @@ body {
   p {
       margin: 3% auto;
       padding-top: 2%;
+    &.watch {
+          font-family: $font-copy;
+          font-weight: 600;
+          @include font-size(14px);
+        }
+      a {
+        color: $black;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          font-family: $font-copy;
+          font-weight: 600;
+          @include font-size(14px);
+          color: $black !important;
+          text-decoration: underline !important;
+        }
+
   }
+
+}
 }
 
 //===============

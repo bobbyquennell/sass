@@ -135,6 +135,12 @@ html, body { height: 80%; margin: 0; padding: 0; }
 
 .lp-story p { margin: 3% auto; padding-top: 2%; }
 
+.lp-story p.watch { font-family: "Open Sans", sans-serif; font-weight: 600; font-size: 14px; font-size: 0.875rem; }
+
+.lp-story p a { color: #231f20; }
+
+.lp-story p a:link, .lp-story p a:visited, .lp-story p a:hover, .lp-story p a:active { font-family: "Open Sans", sans-serif; font-weight: 600; font-size: 14px; font-size: 0.875rem; color: #231f20 !important; text-decoration: underline !important; }
+
 .cta:hover { cursor: pointer; }
 
 .cta:hover .play { opacity: 1; }
